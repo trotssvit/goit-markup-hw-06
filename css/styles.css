@@ -232,6 +232,7 @@ padding-bottom: 25px; */
 .address-links {
   margin-right: 70px;
 }
+/* ----------------------------mailing----------------------------------- */
 .mailing-text {
   font-style: normal;
   font-weight: 700;
@@ -247,18 +248,49 @@ padding-bottom: 25px; */
 .input-email {
   width: 358px;
   height: 50px;
-  border-color: #2f303a;
-  background-color: var(--footer-bg-color);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding: 0;
+  border: 0;
   border-radius: 4px;
-  margin-right: 12px;
+  font: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--footer-bg-color);
 }
+.form-field {
+  position: relative;
+  margin-right: 12px;
+
+  display: inline-block;
+  align-items: baseline;
+}
+.email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  
+  color: rgba(255, 255, 255, 0.6);
+
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mailing {
   display: inline-block;
   align-items: baseline;
   position: inherit;
   margin-top: 12px;
+}
+.input-email:focus + .email,
+.input-email:not(:placeholder-shown) + .email
+{
+  transform: translateY(-45px);
+ 
 }
 .button-submit {
   display: inline-flex;
@@ -266,6 +298,7 @@ padding-bottom: 25px; */
   position: absolute;
   width: 200px;
   height: 50px;
+  border: 0;
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -275,7 +308,7 @@ padding-bottom: 25px; */
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 188% */
+  
 
   align-items: center;
   text-align: center;
@@ -284,6 +317,7 @@ padding-bottom: 25px; */
   color: #ffffff;
   align-items: center;
   justify-content: center;
+  padding: 0px;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -299,13 +333,11 @@ padding-bottom: 25px; */
 
 
 }
-
 .button-submit:hover,
 .button-submit:focus{
   background-color: var(--hero-button-bg);
 
 }
-
 /* --------------------------header main navigation -----------------*/
 .header {
   border-bottom: 1px solid #ececec;
