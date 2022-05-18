@@ -884,6 +884,46 @@ padding-bottom: 25px; */
   background-color: #fff;
   border-radius: 4px;
 }
+.modal-header{
+  font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+
+margin-top: 40px;
+margin-bottom: 12px;
+}
+.modal-fields{
+  
+
+}
+.modal-field{
+  position: relative;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+  
+}
+.modal-label{
+  font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: #757575;
+}
+.modal-icon{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(-50%);
+}
+
 .modal-close-bt {
   display: flex;
   position: absolute;
@@ -897,7 +937,7 @@ padding-bottom: 25px; */
   top: 8px;
   right: 8px;
 }
-.is-hidden {
+/* .is-hidden { */
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
