@@ -412,6 +412,11 @@
         </div>
       </div>
     </footer>
+
+
+    <!-- ------------------Modal window------------------- -->
+
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
@@ -453,19 +458,25 @@
             <div class="modal-field">
               <label class="modal-label" for="coment">Комментарий </label>
 
-              <textarea class="modal-input-text" name="coment" id="coment" placeholder="Введите текст"></textarea>
+              <textarea class="modal-input-text" name="coment" id="coment" placeholder="Введите текст"
+                required></textarea>
             </div>
           </div>
 
+          <!-- ---------------Check box----------------------- -->
 
-          <div class="modal-checkbox-form"></div>
-          <label class="modal-checkbox">
-            <input class="checkbox" type="checkbox" name="agreement" value="checkbox" required />
-            <span class="checkbox-icon"></span>
 
-            <span class="modal-text-agreement">Соглашаюсь с рассылкой и принимаю <a>Условия договора</a>
+          <div class="modal-checkbox-form">
+            <label class="modal-checkbox">
+              <input class="checkbox" type="checkbox" name="agreement" value="checkbox" required />
+              <span class="checkbox-icon"></span>
 
-          </label>
+              <p class="modal-text-agreement">Соглашаюсь с рассылкой и принимаю</p>
+
+            </label>
+
+            <a class="agreement-style" href="">Условия договора</a>
+          </div>
           <button class="modal-button">Отправить</button>
         </form>
       </div>
